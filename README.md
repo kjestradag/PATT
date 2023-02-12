@@ -95,21 +95,15 @@ The output of RaPDTool produces 4 files:
 
 ### File "<prefix>.gff"
 
-<p align="justify">
 Annotation file in [GFF](https://www.ensembl.org/info/website/upload/gff.html#:~:text=The%20GFF%20(General%20Feature%20Format,identical%20to%20GFF%20version%202.) format of the transferred proteins.
-</p>
 
 ### File "<prefix>.gbk"
 
-<p align="justify">
 Annotation file in [GenBank](https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html) format of the transferred proteins.
-</p>
   
 ### File "<prefix>.ffn"
 
-<p align="justify">
 Fasta file of all coding sequences (CDs).
-</p>
   
 ### File "<prefix>.faa"
 
