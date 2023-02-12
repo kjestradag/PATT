@@ -95,7 +95,7 @@ The output of RaPDTool produces 4 files:
 
 ### File "<prefix>.gff"
 
-Annotation file in [GFF](https://www.ensembl.org/info/website/upload/gff.html#:~:text=The%20GFF%20(General%20Feature%20Format,identical%20to%20GFF%20version%202.) format of the transferred proteins.
+Annotation file in [GFF](https://www.ensembl.org/info/website/upload/gff.html#fields) format of the transferred proteins.
 
 ### File "<prefix>.gbk"
 
