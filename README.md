@@ -12,9 +12,9 @@ With its intuitive user interface and robust annotation algorithms, PATT is desi
 
 > **Snakemake** (https://snakemake.readthedocs.io/en/stable/index.html)
 
-> **Exonerate** (https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate)
+> **Exonerate** (https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate) (v.2.4.0)
 
-> **Perl** (https://www.perl.org/get.html)
+> **Perl** (https://www.perl.org/get.html) (v5.30.0)
 
 > **AWK**
 
