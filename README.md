@@ -77,7 +77,7 @@ If genome or protein fastas files have other names, then run:
 
   > snakemake --cores <core_numbers> --rerun-incomplete --config PROTREF="protein.faa" GENOME="genome.fasta" PREFIX="prefix_outputfilename" NEWPREFIX="prefix_newgenenames_" -s path/of/Snakefile_PATT
 
-  **About variables that PATT needs:**
+  **About variables that PATT optionally needs:**
   
   GENOME= "genome.fasta" # Fasta file of genome that we want to annotate. Default: "genome.fasta"
   
