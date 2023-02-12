@@ -116,6 +116,6 @@ Fasta file of the peptide sequences.
 
 ## Acknowledgments
 
-PATT would not have been possible without my fellow researchers at the UUSMB (Unidad Universitaria de Secuenciación Masiva y Bioinformática), in particular, Jerome Verleyen and Alejandro Sanchez, who helped me with ideas and challenges during PATT's development.
+PATT wouldn't be the same without my fellow researchers at the UUSMB (Unidad Universitaria de Secuenciación Masiva y Bioinformática), in particular, Jerome Verleyen and Alejandro Sanchez, who helped me with ideas and challenges during PATT's development.
 
 PATT uses [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) for pipeline development, [Exonerate](https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate) to perform alignments and [Readseq](https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/0471250953.bia01es00) and Mario Stanke script "gff2gbSmallDNA.pl" to format manipulations.
