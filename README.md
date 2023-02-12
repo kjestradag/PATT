@@ -33,17 +33,17 @@ PATT pipeline it is written in Snakemake and Perl. For greater convenience/ease 
 You just need to [download](https://figshare.com/ndownloader/files/37939014) the Singularity image **PATT** and have installed "Apptainer/Singularity". If you don't have it installed, you can install it:
 
 **with Conda** 
->  $ conda install -c conda-forge singularity 
+>  conda install -c conda-forge singularity 
 
 Alternatively, x86_64 RPMs are available on GitHub immediately after each Apptainer release and they can be installed directly from there:
 
 **with RPMs**
->  $ sudo yum install -y https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer-1.1.3-1.x86_64.rpm
+>  sudo yum install -y https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer-1.1.3-1.x86_64.rpm
 
 **with DEB**
->  $ wget https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer_1.1.3_amd64.deb
+>  wget https://github.com/apptainer/apptainer/releases/download/v1.1.3/apptainer_1.1.3_amd64.deb
 
->  $ sudo apt-get install -y ./apptainer_1.1.3_amd64.deb
+>  sudo apt-get install -y ./apptainer_1.1.3_amd64.deb
 
 For more details of the Apptainer installation process, go [here](https://apptainer.org/docs/admin/main/installation.html).
 
@@ -68,14 +68,14 @@ You can check [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_sta
 ## Quick usage: (Install Option 2)
 
 For genome.fasta and protein.faa file name run:
-  > $ snakemake --cores <number of threads> -s /path/of/Snakefile
+  > snakemake --cores <number of threads> -s /path/of/Snakefile
 
 If genome or protein fastas files have other names, then run:
-  > $ snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename"
+  > snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename"
 
 ### More options
 
-  > $ snakemake --cores <core_numbers> --rerun-incomplete --config PROTREF="protein.faa" GENOME="genome.fasta" PREFIX="prefix_outputfilename" NEWPREFIX="prefix_newgenenames_" -s path/of/Snakefile_PATT
+  > snakemake --cores <core_numbers> --rerun-incomplete --config PROTREF="protein.faa" GENOME="genome.fasta" PREFIX="prefix_outputfilename" NEWPREFIX="prefix_newgenenames_" -s path/of/Snakefile_PATT
 
   **About variables that PATT needs:**
   
