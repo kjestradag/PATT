@@ -2,6 +2,9 @@
   <h1>PATT</h1>
   <h1>${{\color{red}P}roteome\ {\color{red}A}nnotation\ {\color{red}T}ransfer\ {\color{red}T}ool}$</h1>
 </div>
+
+![pipeline](https://user-images.githubusercontent.com/43998702/218341198-6ab0f54c-c842-43bc-9a05-7c53cf014147.png)
+
 <div align="justify">
 Proteome Annotation Transfer Tool (PATT) is a powerful and versatile software tool for transferring annotations from a reference genome to an unannotated query genome. Developed using the Snakemake workflow management system, PATT provides a streamlined and efficient approach to annotating new genomes, enabling researchers to rapidly and accurately annotate large-scale genomic data sets.
 
