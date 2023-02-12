@@ -1,0 +1,12 @@
+all
+tmpWD
+splitfasta
+exthomol
+mergingGFF
+individualGFF
+formatGFF
+fixingcoords
+sortingGFF
+updatePrefix
+GFF2GBK
+CDSandProtein
