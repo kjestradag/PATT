@@ -47,17 +47,6 @@ Alternatively, x86_64 RPMs are available on GitHub immediately after each Apptai
 
 For more details of the Apptainer installation process, go [here](https://apptainer.org/docs/admin/main/installation.html).
 
-**Quick usage: (Install Option 1)** 
-  > PATT <genome.fasta> <protein.fasta>
-
-  notes:
- 
-    1- You need to put "PATT" in your path, otherwise you must give the whole path so that it can be found.
-
-    2- The input fasta files must exist in your $HOME, otherwise you need to set the environment variable SINGULARITY_BIND
-    to bind paths where your sequences are located
-    ex: export SINGULARITY_BIND="../path/for/the/inputs/fasta"
-
 ### Option 2
 
 Make sure you have all **dependencies** installed.
@@ -65,19 +54,30 @@ You also need to download and have in your path **all the "bin" scripts**.
 
 You can check [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) on their site for more details of this.
 
-**Quick usage: (Install Option 2)** 
+## Quick usage: (Install Option 1)
+  > PATT <genome.fasta> <protein.fasta>
+
+  notes:
+ 
+    1- You need to put "PATT" in your path, otherwise you must give the whole path so that it can be found.
+
+    2- The input [fasta](https://en.wikipedia.org/wiki/FASTA_format) files must exist in your $HOME, otherwise you need to set the environment variable SINGULARITY_BIND
+    to bind paths where your sequences are located
+    ex: export SINGULARITY_BIND="../path/for/the/inputs/fasta"
+
+## Quick usage: (Install Option 2)
 
 For genome.fasta and protein.faa file name run:
-> $ snakemake --cores <number of threads> -s /path/of/Snakefile
+  > $ snakemake --cores <number of threads> -s /path/of/Snakefile
 
 If genome or protein fastas files have other names, then run:
-> $ snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename"
+  > $ snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename"
 
-**More options**
+### More options
 
-$ snakemake --cores <core_numbers> --rerun-incomplete --config PROTREF="protein.faa" GENOME="genome.fasta" PREFIX="prefix_outputfilename" NEWPREFIX="prefix_newgenenames_" -s path/of/Snakefile_PATT
+  > $ snakemake --cores <core_numbers> --rerun-incomplete --config PROTREF="protein.faa" GENOME="genome.fasta" PREFIX="prefix_outputfilename" NEWPREFIX="prefix_newgenenames_" -s path/of/Snakefile_PATT
 
-About variables that PATT needs:
+  **About variables that PATT needs:**
   
   GENOME= "genome.fasta" # Fasta file of genome that we want to annotate. Default: "genome.fasta"
   
@@ -93,17 +93,32 @@ About variables that PATT needs:
 
 The output of RaPDTool produces 4 files:
 
-### File "rapdtools_confidence.txt"
+### File "<prefix>.gff"
 
 <p align="justify">
-Summarizes the best/most reliable **Mash** hits to be able to classify at the genus or species level. For the genus level it is considered a cut-off value <= 0.08 and <= 0.05 for species level.
-Additionally it contains the results of the taxonomic classification with Focus, leaving only the species with a relative abundance greater than 1.
+Annotation file in [GFF](https://www.ensembl.org/info/website/upload/gff.html#:~:text=The%20GFF%20(General%20Feature%20Format,identical%20to%20GFF%20version%202.) format of the transferred proteins.
 </p>
 
-### File "rapdtool_krona.html"
+### File "<prefix>.gbk"
+
+<p align="justify">
+Annotation file in [GenBank](https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html) format of the transferred proteins.
+</p>
+  
+### File "<prefix>.ffn"
+
+<p align="justify">
+Fasta file of all coding sequences (CDs).
+</p>
+  
+### File "<prefix>.faa"
+
+<p align="justify">
+Fasta file of the peptide sequences.
+</p>
 
 ## Acknowledgments
 
-PATT would not have been possible without my fellow researchers at the UUSMB (Unidad Universitaria de Secuenciación Masiva y Bioinformática), in particular, Jerome Verleyen and Alejandro Sanchez, they helped me with ideas and challenges during PATT's development.
+PATT would not have been possible without my fellow researchers at the UUSMB (Unidad Universitaria de Secuenciación Masiva y Bioinformática), in particular, Jerome Verleyen and Alejandro Sanchez, who helped me with ideas and challenges during PATT's development.
 
 PATT uses [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) for pipeline development, [Exonerate](https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate) to perform alignments and [Readseq](https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/0471250953.bia01es00) and Mario Stanke script "gff2gbSmallDNA.pl" to format manipulations.
