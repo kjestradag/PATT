@@ -74,7 +74,7 @@ For genome.fasta and protein.faa file name run:
   > snakemake --cores <number of threads> -s /path/of/Snakefile
 
 If genome or protein fastas files have other names, then run:
-  > snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename"
+  > snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename" -s path/of/Snakefile_PATT
 
 ### More options
 
