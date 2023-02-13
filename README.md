@@ -94,7 +94,7 @@ If genome or protein fastas files have other names, then run:
 
 ## Output files
 
-The output of RaPDTool produces 4 files:
+The output of PATT produces 4 files:
 
 ### File "<prefix>.gff"
 
