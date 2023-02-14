@@ -7,7 +7,7 @@
 
 <div align="justify">
 Proteome Annotation Transfer Tool (PATT) is a powerful and versatile software tool for transferring annotations from a reference genome to an unannotated query genome. Developed using the Snakemake workflow management system, PATT provides a highly parallelized architecture and efficient approach to annotating new genomes, enabling researchers to rapidly and accurately annotate large-scale genomic data sets.
-
+PATT searches for the best protein ortholog of a close reference in a genome that we want to annotate, generating the best model of it and returning its coding and peptide sequence as well as its coordinates through .gff and .gbk annotation files.
 PATT is designed to simplify the process of annotating new genomes, streamlining your research process and delivering high-quality results.
 </div>
 
@@ -74,7 +74,7 @@ For genome.fasta and protein.faa file name run:
   > snakemake --cores <number of threads> -s /path/of/Snakefile
 
 If genome or protein fastas files have other names, then run:
-  > snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename"
+  > snakemake --cores <core_numbers> --config PROTREF="current_protein_fasta_filename" GENOME="current_genome_fasta_filename" -s path/of/Snakefile_PATT
 
 ### More options
 
@@ -94,7 +94,7 @@ If genome or protein fastas files have other names, then run:
 
 ## Output files
 
-The output of RaPDTool produces 4 files:
+The output of PATT produces 4 files:
 
 ### File "<prefix>.gff"
 
