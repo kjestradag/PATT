@@ -21,6 +21,10 @@ PATT is designed to simplify the process of annotating new genomes, streamlining
 
 > **AWK**
 
+> Java
+
+> **Parallel** (https://manpages.ubuntu.com/manpages/impish/man1/parallel.1.html)
+
 **Perl Modules**
 
 >  Getopt::Long
