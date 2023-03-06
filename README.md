@@ -5,7 +5,7 @@
 
 <div align="center">
   <h1>PATT</h1>
-  <h1>Proteome\ Annotation\ Transfer\ Tool</h1>
+  <h1>Proteome Annotation Transfer Tool</h1>
 </div>
 
 ![pipeline](https://user-images.githubusercontent.com/43998702/218341198-6ab0f54c-c842-43bc-9a05-7c53cf014147.png)
