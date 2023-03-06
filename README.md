@@ -1,6 +1,11 @@
-<div align="center">
+<!--- <div align="center">
   <h1>${\color{brown}PATT}$</h1>
   <h1>${{\color{red}P}roteome\ {\color{red}A}nnotation\ {\color{red}T}ransfer\ {\color{red}T}ool}$</h1>
+</div> --->
+
+<div align="center">
+  <h1>PATT</h1>
+  <h1>Proteome Annotation Transfer Tool</h1>
 </div>
 
 ![pipeline](https://user-images.githubusercontent.com/43998702/218341198-6ab0f54c-c842-43bc-9a05-7c53cf014147.png)
@@ -20,6 +25,10 @@ PATT is designed to simplify the process of annotating new genomes, streamlining
 > **Perl** (https://www.perl.org/get.html) (v5.30.0)
 
 > **AWK**
+
+> **Java**
+
+> **Parallel** (https://manpages.ubuntu.com/manpages/impish/man1/parallel.1.html)
 
 **Perl Modules**
 
