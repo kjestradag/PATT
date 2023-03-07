@@ -65,7 +65,7 @@ Make sure you have all **dependencies** installed.
 You also need to download and have in your path **all the "bin" scripts**.
 
 To avoid errors with Java, you also need to create a variable with the absolute path of "readseq.jar" which is in the bin folder:
-export CLASSPATH="/full/path/to/bin/readseq.jar"
+>  export CLASSPATH="/full/path/to/bin/readseq.jar"
 
 You can check [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) on their site for more details of this.
 
