@@ -249,7 +249,7 @@ rule CDSandProtein:
     shell:
         """
         cd {PATTTEMP}
-        java -cp readseq.jar run -format=8 -inform=2 -feat=CDS {input} -o {output[0]} 2>/dev/null
+        java run -format=8 -inform=2 -feat=CDS {input} -o {output[0]} 2>/dev/null
         perl -pi -e 's/^\>.*gene="([^"]+).*$/>\\1/' {output[0]}
         patt_code2aa_ws.pl {output[0]} > {output[1]}
         cp {output[0]} {output[1]} ../
