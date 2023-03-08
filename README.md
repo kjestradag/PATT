@@ -22,6 +22,8 @@ PATT is designed to simplify the process of annotating new genomes, streamlining
 
 > **Exonerate** (https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate) (v.2.4.0)
 
+> **Blat** (https://github.com/djhshih/blat)
+
 > **Perl** (https://www.perl.org/get.html) (v5.30.0)
 
 > **AWK**
