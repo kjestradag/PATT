@@ -34,6 +34,8 @@ PATT is designed to simplify the process of annotating new genomes, streamlining
 
 >  Getopt::Long
 
+>  Getopt::Std
+
 >  Parallel::ForkManager
 
 ## Installation:
