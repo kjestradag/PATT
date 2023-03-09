@@ -65,8 +65,8 @@ rule all:
 
 rule tmpWD:
     output:
-        temp(directory({PATTTEMP}))
-        #directory({PATTTEMP}) # keep temp files
+        #temp(directory({PATTTEMP}))
+        directory({PATTTEMP}) # keep temp files
     shell:
         """
         mkdir {output[0]}

@@ -27,14 +27,14 @@ extract_prot_and_blat();
 sub extract_prot_and_blat{
     foreach my $prot ( @list ){
 		$pm->start and next;
-        system("grep_fasta.l '$prot' $fasta > ${prot}.faa 2>/dev/null"); # extrae las prot
+        system("patt_grep_fasta.pl '$prot' $fasta > ${prot}.faa 2>/dev/null"); # extrae las prot
         system("blat -q=prot -t=dnax -minScore=20 $genome ${prot}.faa ${prot}.blat 1>/dev/null"); # corre blat
-        system("blat_best_match.l ${prot}.blat > ${prot}.blat.best 2>/dev/null"); # deja del blat el mejor hit o lugar en el genoma donde aparece
+        system("patt_blat_best_match.pl ${prot}.blat > ${prot}.blat.best 2>/dev/null"); # deja del blat el mejor hit o lugar en el genoma donde aparece
         my ($contig, $from, $to)= ext_cont("${prot}.blat.best"); # extrae las coordenadas de la region genomica donde mejor hace match
         system("echo '$contig $from $to' > ${prot}.coords");
-        system("grep_fasta.l -x ${prot}.coords $genome > ${prot}.coords.fna 2>/dev/null"); # construye el fasta con la secuencia de acuerdo a las coordenadas de la region genomica donde mejor hace match
+        system("patt_grep_fasta.pl -x ${prot}.coords $genome > ${prot}.coords.fna 2>/dev/null"); # construye el fasta con la secuencia de acuerdo a las coordenadas de la region genomica donde mejor hace match
         system("exonerate -m protein2genome -s 0 -c 1 --showtargetgff T -n 1 ${prot}.faa ${prot}.coords.fna > ${prot}.protein2genome"); # corre exonerate
-        system("/home/karel/bin/ext_est2g_interv_last.l ${prot}.coords.fna ${prot}.protein2genome p > ${prot}.results"); # extrae el CDs, la secuencia peptidica y los intervalos (UTRs, exones, intrones)
+        system("patt_ext_est2g_interv_last.pl ${prot}.coords.fna ${prot}.protein2genome p > ${prot}.results"); # extrae el CDs, la secuencia peptidica y los intervalos (UTRs, exones, intrones)
         unlink "${prot}.faa", "${prot}.blat", "${prot}.blat.best", "${prot}.coords.fna", "${prot}.coords";
         $pm->finish;
     }
