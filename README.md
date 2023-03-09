@@ -142,4 +142,4 @@ PATT uses [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) for
 
   karel.estrada@ibt.unam.mx
 
-  Twitter: @kjestradag
+  Twitter: [@kjestradag](https://twitter.com/kjestradag) 
