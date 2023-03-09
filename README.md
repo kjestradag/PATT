@@ -138,6 +138,8 @@ PATT uses [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) for
 
 ## Author
 
-. Karel Estrada
-. karel.estrada@ibt.unam.mx
-. Twitter: @kjestradag
+  Karel Estrada
+
+  karel.estrada@ibt.unam.mx
+
+  Twitter: @kjestradag
