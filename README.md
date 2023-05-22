@@ -1,12 +1,7 @@
 [![DOI](https://zenodo.org/badge/600843059.svg)](https://zenodo.org/badge/latestdoi/600843059)
 
-<!--- <div align="center">
-    <h1>${\color{black}PATT:\ {\color{red}P}roteome\ {\color{red}A}nnotation\ {\color{red}T}ransfer\ {\color{red}T}ool$</h1>
-</div> --->
-
 <div align="center">
-  <h1>PATT</h1>
-  <h1>Proteome Annotation Transfer Tool</h1>
+    <h1>${\color{black}PATT:\ {\color{red}P}roteome\ {\color{red}A}nnotation\ {\color{red}T}ransfer\ {\color{red}T}ool}$</h1>
 </div>
 
 ![pipeline](https://user-images.githubusercontent.com/43998702/218341198-6ab0f54c-c842-43bc-9a05-7c53cf014147.png)
