@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/600843059.svg)](https://zenodo.org/badge/latestdoi/600843059)
+
 <!--- <div align="center">
   <h1>${\color{brown}PATT}$</h1>
   <h1>${{\color{red}P}roteome\ {\color{red}A}nnotation\ {\color{red}T}ransfer\ {\color{red}T}ool}$</h1>
@@ -130,6 +132,9 @@ Fasta file of all coding sequences (CDs).
 Fasta file of the peptide sequences.
 </p>
 
+## Citation
+Estrada K, Verleyen J. PATT:Proteome Annotation Transfer Tool. 2021. [doi:10.5281/zenodo.600843059](https://zenodo.org/badge/latestdoi/600843059)
+  
 ## Acknowledgments
 
 PATT wouldn't be the same without my fellow researchers at the UUSMB (Unidad Universitaria de Secuenciación Masiva y Bioinformática), in particular, Jerome Verleyen and Alejandro Sanchez, who helped me with ideas and challenges during PATT's development.
