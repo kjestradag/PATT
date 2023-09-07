@@ -127,7 +127,7 @@ Fasta file of the peptide sequences.
 </p>
 
 ## Citation
-Estrada K, PATT:Proteome Annotation Transfer Tool. 2021. [doi:10.5281/zenodo.600843059](https://zenodo.org/badge/latestdoi/600843059)
+Estrada, K. (2023). PATT (Proteome Annotation Transfer Tool) (Version 1) [Computer software]. https://doi.org/10.5281/zenodo.7958134
   
 ## Acknowledgments
 
