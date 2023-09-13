@@ -137,7 +137,7 @@ PATT uses [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) for
 
 ## Author
 
-  Karel Estrada
+  Karel Estrada and yahel
 
   karel.estrada@ibt.unam.mx
 
